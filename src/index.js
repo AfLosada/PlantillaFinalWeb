@@ -5,6 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 import { IntlProvider } from "react-intl";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import localeEnLang from './locale/en.json';
 import localeEsLang from './locale/es.json';
@@ -18,9 +19,18 @@ let lenguaje = () => {
     }
 }
 
+let leng2 = () => {
+    if (navigator.language.includes('es')) {
+        return "es";
+    }
+    else {
+        return "en";
+    }
+}
+
 ReactDOM.render(
-    <IntlProvider locale={navigator.language} key={navigator.language} data={lenguaje()}>
-        <App locale = {navigator.language}/>
+    <IntlProvider locale={leng2()} key={leng2()} messages={lenguaje()}>
+        <App locale = {leng2()}/>
     </IntlProvider>,
     document.getElementById('root')
 );

@@ -1,14 +1,17 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {FormattedMessage} from 'react-intl';
-import ComponentPrueba from './components/componentPrueba';
+import { FormattedMessage } from 'react-intl';
+import ListaPeliculas from './components/ListaPeliculas';
 
 function App() {
 
   return (
     <div className="App">
-      <ComponentPrueba/>
+      <nav className="navbar navbar-dark bg-primary">
+        <h5><FormattedMessage id="Navbar" /></h5>
+      </nav>
+      <ListaPeliculas />
     </div>
   );
 }

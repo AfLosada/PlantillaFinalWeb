@@ -1,3 +1,11 @@
 {
-    "Title" : "Examen Final"
+    "Navbar" : "Peliculas",
+    "Name" : "Nombre",
+    "Directed by" : "Dirijido Por",
+    "Country" : "País",
+    "Release" : "Estreno",
+    "Budget" : "Presupuesto",
+    "Views" : "Visualizaciones",
+    "Million" : " Millón",
+    "Millions" : " Millones"
 }

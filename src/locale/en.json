@@ -1,3 +1,11 @@
 {
-    "Title" : "Final Exam"
+    "Navbar" : "Movies",
+    "Name": "Name",
+    "Directed by" : "Directed By",
+    "Country" : "Country",
+    "Release" : "Release",
+    "Views" : "Views",
+    "Budget" : "Budget",
+    "Million" : " Million",
+    "Millions" : " Millions"
 }
