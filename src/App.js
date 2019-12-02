@@ -9,6 +9,7 @@ function App() {
   return (
     <div className="App">
       <nav className="navbar navbar-dark bg-primary">
+
         <h5><FormattedMessage id="Navbar" /></h5>
       </nav>
       <ListaPeliculas />

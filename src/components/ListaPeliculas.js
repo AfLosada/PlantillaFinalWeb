@@ -84,7 +84,7 @@ class ListaPeliculas extends Component {
             .range([svgDimensions.height - margin.bottom, margin.top])
 
         const x = d3.scaleBand()
-            .domain(this.state.peliculas.map(d => d.name))
+            .domain(this.state.peliculas.map(d => d.id))
             .range([0, iwidth])
             .padding(0.1);
 
@@ -93,7 +93,7 @@ class ListaPeliculas extends Component {
         bars.enter().append("rect")
             .attr("class", "bar")
             .style("fill", "steelblue")
-            .attr("x", d => x(d.name))
+            .attr("x", d => x(d.id))
             .attr("y", d => y(d.views))
             .attr("height", d => iheight - y(d.views))
             .attr("width", x.bandwidth())
